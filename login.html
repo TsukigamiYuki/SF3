@@ -38,17 +38,26 @@
         // Handle the login form submission
         document.getElementById('login-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
-
+    
             const email = document.getElementById('email').value.trim();
             const password = document.getElementById('password').value.trim();
-
+    
             if (email && password) {
-                // Simulate a login process
-                localStorage.setItem('userLoggedIn', 'true'); // Set logged-in status
-                alert('Login successful!');
-
-                // Redirect to the index page
-                window.location.href = 'index1.html';
+                // Retrieve registered users from localStorage
+                const users = JSON.parse(localStorage.getItem('users')) || [];
+    
+                // Check if a user with the provided email and password exists
+                const user = users.find(user => user.email === email && user.password === password);
+    
+                if (user) {
+                    // Successful login
+                    localStorage.setItem('userLoggedIn', 'true'); // Set logged-in status
+                    alert('Welcome back, '+ user.username + '!');
+                    window.location.href = 'index1.html'; // Redirect to the index page
+                } else {
+                    // Invalid credentials
+                    alert('Invalid email or password. Please try again.');
+                }
             } else {
                 alert('Please fill in both fields!');
             }

@@ -49,7 +49,7 @@ document.getElementById('loginForm')?.addEventListener('submit', function (event
     if (isValidUser) {
         localStorage.setItem('userLoggedIn', email); // Set logged-in status
         sendEmail(email); // Send email notification
-        window.location.href = 'index.html'; // Redirect to the homepage
+        window.location.href = 'index1.html'; // Redirect to the homepage
     } else {
         alert('Invalid email or password.');
     }
@@ -65,7 +65,7 @@ function logout() {
 // Ensure login to access the homepage
 document.addEventListener('DOMContentLoaded', function () {
     const userLoggedIn = localStorage.getItem('userLoggedIn');
-    if (!userLoggedIn && window.location.pathname.includes('index.html')) {
+    if (!userLoggedIn && window.location.pathname.includes('index1.html')) {
         alert('You must log in first.');
         redirectToLogin();
     }
