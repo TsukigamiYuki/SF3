@@ -8,7 +8,7 @@
 body {
     line-height: 1.6;
     font-family: Arial, sans-serif;
-    background: url('/Pics/sakura.jpg');
+    background: url('sakura.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
