@@ -8,7 +8,7 @@
 body {
     line-height: 1.6;
     font-family: Arial, sans-serif;
-    background: url('Pics/sakura.jpg');
+    background: url('/Pics/sakura.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,14 +117,14 @@ main {
 
 .contact-container input:focus,
 .contact-container textarea:focus {
-    border-color: #0078d7; /* Highlighted border on focus */
-    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+    border-color: #d4006a; /* Highlighted border on focus */
+    box-shadow: 0 0 5px #af025877;
 }
 
 .contact-container button {
     width: 100%;
     padding: 0.8rem;
-    background: #0078d7;
+    background: #d4006a;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -134,7 +134,7 @@ main {
 }
 
 .contact-container button:hover {
-    background: #005bb5;
+    background: #af0259;
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
 

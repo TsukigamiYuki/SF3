@@ -164,23 +164,23 @@ nav ul li a:hover {
 }
 
 #album1 {
-  background-image: url('Misc/pics/908270.png');
+  background-image: url('/Sub/Misc/pics/908270.png');
 }
 
 #album2 {
-  background-image: url('Misc/pics/Show-By-Rock-Season-2-Header-001-20160704.webp');
+  background-image: url('/Sub/Misc/pics/Show-By-Rock-Season-2-Header-001-20160704.webp');
 }
 
 #album3 {
-  background-image: url('Misc/pics/download.jfif');
+  background-image: url('/Sub/Misc/pics/download.jfif');
 }
 
 #album4 {
-  background-image: url('Misc/pics/download 2.jfif');
+  background-image: url('/Sub/Misc/pics/download 2.jfif');
 }
 
 #album5 {
-  background-image: url('Misc/pics/_16-9_11616.jpg');
+  background-image: url('/Sub/Misc/pics/_16-9_11616.jpg');
 }
 
 .album-item:hover {
